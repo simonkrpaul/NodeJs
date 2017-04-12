@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>The Riddler!</h1>
+        </header>
+        <div id="mainContainer">
+            <form id="infoForm">
+                <ul>
+                    <li><input type="text" placeholder="Name" name="uname" required  onblur="matchPattern('uname')"/></li>
+                    <li><input type="email" placeholder="Email" name="email" required onblur="matchPattern('email')"/></li>
+                    <li><input type="number" placeholder="Age" min="18" max="80" name="age" required/></li>
+                    <li><input type="submit" value="Let's play!" class="primary"/></li>
+                </ul>
+            </form>
+            <div id="mainPuzzle" class="noDisplay">
+                <h2>Great! Choose a puzzle:</h2>
+                <div id="puzzleListContainer">
+                    <ul class="puzzleList"></ul>
+                </div>
+                <div class="navBtn"><button onclick="slide(-1)">&lt;</button><button onclick="slide(1)">&gt;</button></div>
+            </div>
+            <div id="puzzleContainer" class="noDisplay"></div>
+            <div class="overlay noDisplay">
+                <div id="overlayMsg">
+
+                </div>
+            </div>
+        </div>
+        <!--<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/config.js"></script>
+    </body>
+</html>

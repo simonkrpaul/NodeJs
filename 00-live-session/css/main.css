@@ -94,8 +94,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
+.betterStyle{background: #f1f1f1; border: 1px solid #ccc; color: #1b1b1b; margin-bottom: 10px;}
+input.required{border: 1px solid green; position: relative;}
+input.required::after{content:'*';position: absolute; top:10; right: 0;}
 
 
 

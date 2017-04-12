@@ -1,9 +1,11 @@
-function announceTheArrival(){
-	alert("Aye aye! I'm coming from an external JS file.");	
-}
-function dynamicTxt(){
-	document.getElementById('dynamic').innerHTML = "Hello ladies, I am a dynamic text. Respect!"
-}
-function generateError(){
-	alert(errorVal);
+var parentDiv = document.getElementById('parentDiv');
+var childDivs = parentDiv.getElementsByClassName('childDiv');
+for(var i=0; childDivs[i]; i++)
+{
+	childDivs[i].style.border="1px solid red"
+	if(i==2)
+	{
+		childDivs[i].innerHTML = "<ul><li>I am a dynamic text!</li><li>Eh eh eh ... not just text. HTML markup</li></ul>";
+	}
+	
 }
