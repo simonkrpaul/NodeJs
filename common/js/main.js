@@ -5,6 +5,5 @@ function dynamicTxt(){
 	document.getElementById('dynamic').innerHTML = "Hello ladies, I am a dynamic text. Respect!"
 }
 function generateError(){
-	var errorVal = 10;
 	alert(errorVal);
 }

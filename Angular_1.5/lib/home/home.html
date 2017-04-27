@@ -1,0 +1,37 @@
+
+<input ng-model="home.searchTxt" type="text"/>{{home.searchTxt}}
+<div ng-init = "home.demonstrateECMA6()"></div>
+<!--<ul layout="row" class="sortBtns" ng-init = "home.demonstrateECMA6()">
+    <li><md-button class="md-primary md-raised" ng-click="home.sortBy('itemDesc')">Item Description</md-button></li>
+    <li><md-button class="md-primary md-raised" ng-click="home.sortBy('itemNumber')">Item Number</md-button></li>
+</ul>
+<div><md-button class="md-primary md-raised" ng-click="home.loginService()">Call Service</md-button></div>
+<ul layout="column" class="itemList">
+    <li flex ng-repeat = "item in home.items | testFilter:home.searchTxt | orderBy:home.property:home.order">
+        <repeat val="item"></repeat>
+    </li>
+</ul>-->
+
+<div>{{home.name}}</div>
+<div><input type="text" ng-model = "home.name"/></div>
+<div>
+	<input type="text" ng-model = "home.empDetails.name" placeholder="Name" />
+	<input type="number" ng-model = "home.empDetails.age" placeholder="Age"/>
+	<input type="email" ng-model = "home.empDetails.email" placeholder="Email"/>
+	<input type="button" value="add" ng-click="home.addEmployee()" ng-model = "home.empDetails.email"/>
+</div>
+<div>{{home.empDetails}}</div>
+<ul>
+	<li ng-repeat = "emp in home.emp">
+		<div style="float: left">{{emp.name}}</div>
+		<div style="float: left; padding-left: 20px">{{emp.age}}</div>
+		<div style="float: left; padding-left: 20px">{{emp.email}}</div>
+		<div style="float: left; padding-left: 20px" ng-click="home.deleteRecord($index)">delete</div>
+	</li>
+</ul>
+<div>
+	<input type="file" name="File_upload" ng-model="home.file" ng-change = "home.printFile()">
+</div>
+
+
+

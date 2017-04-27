@@ -1,0 +1,5 @@
+.itemList, .itemList ul{list-style: none; margin-left: 0; padding-left: 0}
+.itemList>li{border: 1px solid #f1f1f1;}
+.itemList li{border-right: 1px solid #f1f1f1; padding: 10px}
+.itemList ul>li:last-child{border: none}
+.sortBtns{list-style: none; padding: 10px; margin: 0}

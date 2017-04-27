@@ -1,0 +1,17 @@
+<div ng-if="!(repeat.testItem(repeat.val)=='object' || repeat.testItem(repeat.val)=='array')">
+    {{repeat.val}}
+</div>
+<div ng-if="(repeat.testItem(repeat.val)=='object')">
+	<ul layout="row">
+        <li ng-repeat="(key_child, val_child) in repeat.val">
+            <repeat val="val_child"></repeat>
+        </li>
+    </ul>
+</div>
+<div ng-if="(repeat.testItem(repeat.val)=='array')">
+	<ul layout="column">
+        <li ng-repeat="childName in repeat.val">
+        	<repeat val = "childName"></repeat>
+        </li>
+    </ul>
+</div>

@@ -94,28 +94,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.hide{display: none;}
-.show{display: block;}
-ul{list-style: none; padding: 0; margin: 50px auto; text-align: center}
-ul>li{margin-bottom: 10px;}
-ul>li>input{width: 30%; padding: 5px;}
-ul>li>div{margin-top: 5px;}
-ul>li>div.error{color: red;}
-ul>li>div.success{color: green;}
-input.required{border: 1px solid green; position: relative;}
-input.required::after{content:'*';position: absolute; top:10; right: 0;}
-div#mainContainer #puzzleListContainer{width: 800px; height: 490px; overflow: hidden; position: relative;}
-div#mainContainer #puzzleList{position: absolute; left: 0; top: 0; height: 490px; margin: 0; padding: 0; text-align: center; -webkit-transition: all 0.5s ease-out;}
-div#mainContainer #puzzleList li{float: left; width: 792px; margin: 0; padding: 2px; list-style: none;border: 2px solid #1b1b1b;}
-div#mainContainer #puzzleList li div.selectBtn{margin: 5px 0;}
-div#mainContainer #puzzleList li img{width: 100%;}
-div#mainContainer #puzzleList li h2{padding: 0; margin: 0 20px;}
-div#mainContainer .navBtn{text-align: center;}
-div#mainContainer .navBtn button:first-child{margin-right: 10px;}
-div#mainContainer #puzzleContainer .puzzle{width: 800px; min-height: 500px; background-repeat: no-repeat; text-align: center; color: #ccc!important;}
-div#mainContainer #puzzleContainer .puzzle>div{background: RGBA(0,0,0,.5); height: 450px;}
-div#mainContainer #puzzleContainer .puzzle ul>li{text-align: left; list-style: none; }
-div#mainContainer #puzzleContainer .puzzle ul>li input[type="radio"]{border: 1px solid #f1f1f1; background: #fff; width: 10px; height: 10px;}
+
+
+
 
 
 
