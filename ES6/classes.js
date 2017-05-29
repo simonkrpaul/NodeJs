@@ -25,3 +25,17 @@ var f = new Foo( 5, 15 );
 f.x; // 5
 f.y; // 15
 f.gimmeXY(); // 75
+
+//TS shorthand
+//ES6 way
+class Foo {
+	x: number;
+	constructor(x:number) {
+		this.x = x;
+	}
+}
+//TS way
+class Foo {
+	constructor(public x:number) {
+	}
+}
