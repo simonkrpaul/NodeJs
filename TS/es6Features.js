@@ -1,12 +1,13 @@
 "use strict";
-var MyClass = (function () {
-    function MyClass() {
-    }
-    MyClass.prototype.sayHello = function () {
-        console.log("Hello " + name);
-    };
-    return MyClass;
-}());
+// class MyClass {	
+// 	name: string;
+// 	constructor(){
+// 		this.a = 10;
+// 	};
+// 	sayHello(){
+// 		console.log("Hello "+name);
+// 	}
+// }
 function sortByName(a) {
     var result = a.slice(0);
     result.sort(function (x, y) {

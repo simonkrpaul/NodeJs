@@ -1,8 +1,9 @@
 //declare var $:any;
 //Further details
-// declare var $:{
-// 	(selector:string): any;
-// };
+declare var $:{
+	(selector:string): any;
+};
 $('.awesome').show();
-//$(123).show();
+$('.test')
+$(123).show();
 

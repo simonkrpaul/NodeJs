@@ -15,7 +15,7 @@ console.log( b ); // [1,2,3,4,5]
 //ES5 equivalent
 var b = [1].concat( a, [5] )
 
-//Rest
+//Rest || Gather
 function foo(x, y, ...z) {
 console.log( x, y, z );
 }

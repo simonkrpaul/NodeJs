@@ -3,13 +3,15 @@ interface Person{
 	name: string;
 	age: number;
 }
-class MyClass {
-	
-	name: string;
-	sayHello(){
-		console.log("Hello "+name);
-	}
-}
+// class MyClass {	
+// 	name: string;
+// 	constructor(){
+// 		this.a = 10;
+// 	};
+// 	sayHello(){
+// 		console.log("Hello "+name);
+// 	}
+// }
 function sortByName(a: Person[]){
 	var result = a.slice(0);
 	result.sort((x,y)=>{
