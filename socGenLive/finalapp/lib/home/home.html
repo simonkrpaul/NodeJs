@@ -1,0 +1,36 @@
+<div layout="column">
+    <div layout="row">
+        <input type="text" ng-model="home.searchNm"/>
+        <div layout="row" flex flex-offset="10">
+            <label>Sort by: </label>
+            <ul layout="row" class="sort" flex>
+                <li flex ng-click="home.sort(key)" ng-repeat = "(key, value) in home.fields">
+                    <span>{{key}}</span>
+                    <span class="arrow" ng-show="home.activeField == key">&#8744;</span>
+                    <span class="arrow" ng-show="home.activeField == ('-'+key)">&#8743;</span>
+                </li>
+            </ul>
+        </div>
+        <!--<ul layout="row" class="sort">
+            <li ng-click="home.sort('name')" class="des" ng-class={'asc':home.fields['name'].order}>Name</li>
+            <li ng-click="home.sort('age')" class="des" ng-class={'asc':home.fields['age'].order}>Age</li>
+        </ul>-->
+    </div>
+
+    <!--<div>{{home.coaches}}</div>-->
+    <ul flex="80" flex-offset="10" layout="row" layout-align="center center" layout-wrap id="coachList">
+        <li flex="30" ng-repeat="coach in home.displayedCoaches | filter:home.searchNm | orderBy:home.activeField">
+            <p>{{coach.name}}</p>
+            <div class="userImg"><img ng-src = "{{home.imgBasePath+coach.profile_pic}}"/></div>
+            <div layout="row">
+            <md-button flex class="md-primary md-raised" ng-click="home.triggerAlert(coach)">Profile</md-button>
+            <md-button flex class="md-primary" ng-click="home.hide(coach)">hide</md-button>
+            </div>
+        </li>
+    </ul>
+    <ul layout="row" class="pagination">
+        <li ng-click="home.page = 1; home.applyPagination()">1</li>
+        <li ng-click="home.page = 2; home.applyPagination()">2</li>
+        <li ng-click="home.page = 3; home.applyPagination()">3</li>
+    </ul>
+</div>

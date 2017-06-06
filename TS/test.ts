@@ -1,2 +1,10 @@
-let x = 10, y = 20;
-let bool: boolean = false;
+class Shape {
+    constructor (id, x, y) {
+        this.id = id
+        this.move(x, y)
+    }
+    move (x, y) {
+        this.x = x
+        this.y = y
+    }
+}

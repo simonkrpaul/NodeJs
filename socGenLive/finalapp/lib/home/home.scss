@@ -1,0 +1,13 @@
+ul#coachList{
+    list-style: none;
+    
+}
+ul#coachList>li{text-align: center;margin-top: 20px}
+ul#coachList>li div.userImg{width: 100px; height: 100px; background: #f1f1f1; border-radius: 50%; overflow: hidden; margin: 0 auto; margin-bottom: 10px}
+ul#coachList>li div.userImg img{width: 100%;}
+.baseDiv>div{background: #f1f1f1; border: 1px solid #1f1f1f}
+.sort{margin: 0; padding: 0}
+.sort li{list-style: none; cursor: pointer; margin-left: 10px}
+.sort li:focus{outline:none; border: none}
+.arrow{margin-left: 4px}
+.pagination li{list-style: none; margin-left: 5px}

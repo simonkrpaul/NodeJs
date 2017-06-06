@@ -130,7 +130,7 @@ myArray = ["Bob", "Fred"];
 
 let myStr: string = myArray[0];
 
-//indexing with number and string
+indexing with number and string
 class Animal {
     name: string;
 }

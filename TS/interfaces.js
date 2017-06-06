@@ -83,7 +83,10 @@ mySearch_02 = function (src, sub) {
 var myArray;
 myArray = ["Bob", "Fred"];
 var myStr = myArray[0];
-//indexing with number and string
+indexing;
+with (number)
+    and;
+string;
 var Animal = (function () {
     function Animal() {
     }

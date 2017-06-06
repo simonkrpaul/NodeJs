@@ -3,6 +3,8 @@ function announceTheArrival(){
 }
 function dynamicTxt(){
 	document.getElementById('dynamic').innerHTML = "Hello ladies, I am a dynamic text. Respect!"
+	console.log("Hey!");
+	console.log(document.getElementById('dynamic').innerHTML)
 }
 function generateError(){
 	var errorVal = 10;

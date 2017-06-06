@@ -98,7 +98,7 @@ p === o; // true
 //Array
 var o = [1,2,3],
 a, b, c, p;
-p = { a, b, c } = o;
+p = [ a, b, c ] = o;
 console.log( a, b, c ); // 1 2 3
 p === o; // true
 
