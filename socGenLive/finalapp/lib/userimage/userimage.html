@@ -4,4 +4,8 @@
 	<span ng-if="!(userimage.image.length>0) && !(userimage.name.length>0) && userimage.email.length>0" flex layout="row" layout-align="center center">{{userimage.email.substring(0,1)}}</span>
 </div>-->
 
-Hi, I am a sample text
+<div class="userImg">
+	<div ng-show="userimage.image.length>0" ><img ng-src = "{{userimage.image}}"/></div>
+	<div ng-show="!(userimage.image.length>0) && userimage.name.length>0" layout-align="center center"><h2>{{userimage.name.substring(0,1)}}</h2></div>
+</div>
+<!--{{home.imgBasePath+coach.profile_pic}}-->

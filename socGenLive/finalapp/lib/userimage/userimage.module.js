@@ -16,6 +16,10 @@ userimageModule.component('userimage', {
 		email:'@',
 		size:'@'
 	},*/
+	bindings:{
+		image: '<',
+		name: '@'
+	},
 	controller: UserimageController
 });
 userimageModule.config(UserimageConfig);
