@@ -22,6 +22,7 @@
         <li flex="30" ng-repeat="coach in home.displayedCoaches | filter:home.searchNm | orderBy:home.activeField">
             <p>{{coach.name}}</p>
             <div class="userImg"><img ng-src = "{{home.imgBasePath+coach.profile_pic}}"/></div>
+            <userimage></userimage>
             <div layout="row">
             <md-button flex class="md-primary md-raised" ng-click="home.triggerAlert(coach)">Profile</md-button>
             <md-button flex class="md-primary" ng-click="home.hide(coach)">hide</md-button>

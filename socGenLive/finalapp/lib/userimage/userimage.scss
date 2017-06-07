@@ -1,0 +1,10 @@
+#dietTool .userImage{overflow: hidden; border-radius: 50%; background: #ea3b98;}
+#dietTool .userImage.small{width: 30px; height: 30px}
+#dietTool .userImage.medium{width: 60px; height: 60px;}
+#dietTool .userImage.medium span{font-size: 18px;}
+#dietTool .userImage.large{width: 100px; height: 100px;}
+#dietTool .userImage.xLarge{width: 180px; height: 180px}
+#dietTool .userImage.large span, #dietTool .userImage.xLarge span{font-size: 50px;}
+#dietTool .userImage.large span{}
+#dietTool .userImage img{width: 100%;}
+#dietTool .userImage span{width: 100%; padding: 5%; text-transform: uppercase; color: #fff; background: #12b4e5; text-align: center;font-size: 14px}
