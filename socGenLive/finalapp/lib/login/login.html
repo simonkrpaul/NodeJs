@@ -1,1 +1,8 @@
-Login
+<div layout="row" layout-align="center center">
+	<form name="loginForm" ng-submit="loginForm.$valid?login.submit():login.error()" layout="column">
+		<input type="email" placeholder = "email" ng-model="login.loginInfo.email" required/>
+		<input type="password" placeholder = "password" ng-model="login.loginInfo.pass" required/>
+		
+		<input type="submit" value="login"/>
+	</form>
+</div>

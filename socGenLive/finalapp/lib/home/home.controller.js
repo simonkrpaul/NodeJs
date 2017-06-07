@@ -29,7 +29,17 @@ class HomeController {
         // {
         //     vm.coaches[i].profile_pic = mainConfig.imgBasePath+vm.coaches[i].profile_pic;
         // }
+        vm.getUserProfile();
         
+    }
+    getUserProfile(){
+        var vm = this;
+        var token = vm.Services.getData('auth_token');
+        var profileRes = vm.Services.fetchProfile(token);
+        profileRes.then(function(profileData){
+            if(!(profileData.email))
+                vm.state.go('public.login');
+        })
     }
     redirect(coach){
         var vm = this;
