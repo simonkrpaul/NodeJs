@@ -17,7 +17,7 @@ class services {
           headers : {
                     'contentType': 'application/json'
                 },
-          url: 'http://base.getsetgo.fitness/API/v1/trainerdetails/'+coachId;
+          url: 'http://base.getsetgofitness.com/API/v1/trainerdetails/'+coachId
         })
         return( request.then( this.handleSuccess, this.handleError ) );
     }
@@ -27,7 +27,7 @@ class services {
           headers : {
                     'contentType': 'application/json'
                 },
-          url: 'http://base.getsetgo.fitness/API/v1/searchtrainers/0'
+          url: 'http://base.getsetgofitness.com/API/v1/searchtrainers/0'
         })
         return( request.then( this.handleSuccess, this.handleError ) );
     }

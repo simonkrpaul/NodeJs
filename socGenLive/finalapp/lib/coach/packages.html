@@ -1,0 +1,8 @@
+<ul layout="row" layout-wrap>
+	<li flex="50" layout="column" ng-repeat="package in coach.coachPackages">
+		<div>{{package.service_caption}}</div>
+		<div><strong>Duration: </strong>{{package.pack_length}}</div>
+		<div><strong>Price: </strong>{{package.pack_price | rupeeformat:''}}</div>
+		<div layout="column"><strong>Description: </strong>{{package.pack_des}}</div>
+	</li>
+</ul>

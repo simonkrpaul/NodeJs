@@ -8,5 +8,11 @@ let coachModule = angular.module('demo.coach', []);
 coachModule.config(CoachConfig);
 coachModule.service('Services', Services);
 coachModule.controller('CoachController', CoachController);
-
+coachModule.filter('rupeeformat',function(){
+	return function(inp, symbol){
+		if(symbol.length>0)
+			return symbol+' '+ inp;
+		return '₹ '+inp;
+	}
+})
 export default coachModule = coachModule.name

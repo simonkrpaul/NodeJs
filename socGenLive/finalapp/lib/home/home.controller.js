@@ -5,11 +5,12 @@ class HomeController {
      *
      * @param {object} $scope
      */
-    constructor($scope, Services) {
+    constructor($scope, Services, $state) {
         'ngInject';
         var vm = this;
         vm.Services = Services;
         vm.perPage = 5;
+        vm.state = $state;
         vm.page = 1;
         vm.searchNm = "";
         vm.displayedCoaches = [];
@@ -29,6 +30,11 @@ class HomeController {
         //     vm.coaches[i].profile_pic = mainConfig.imgBasePath+vm.coaches[i].profile_pic;
         // }
         
+    }
+    redirect(coach){
+        var vm = this;
+        console.log(coach.user_id);
+        vm.state.go('public.coach', {'coachId':coach.user_id});
     }
     getCoaches(){
         var vm = this;
