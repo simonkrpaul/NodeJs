@@ -1,1 +1,26 @@
-This is the test url
+<div class="coachDetails" layout="column">
+	<div class="coverImg">
+		<img src = "http://getsetgo.fitness/lib/img/coaches/cover/pratik.jpg"/>
+	</div>
+	<div class="profileImg"><img src = "http://base.getsetgo.fitness/upload/trainer_profile/pratik.jpg"/></div>
+	<ul layout="row" class="tabs" ng-init="tabIndx = 0">
+		<li flex ng-click="tabIndx=0">About</li>
+		<li flex ng-click="tabIndx=1">Transformations</li>
+		<li flex ng-click="tabIndx=2">Packages</li>
+		<li flex ng-click="tabIndx=3">Videos</li>
+	</ul>
+	<div class="tabContent">
+		<div ng-if="tabIndx==0">
+			<div ng-include src="'lib/coach/about.html'"></div>
+		</div>
+		<div ng-if="tabIndx==1">
+			<div ng-include src="'lib/coach/transformations.html'"></div>
+		</div>
+		<div ng-if="tabIndx==2">
+			<div ng-include src="'lib/coach/packages.html'"></div>
+		</div>
+		<div ng-if="tabIndx==3">
+			<div ng-include src="'lib/coach/videos.html'"></div>
+		</div>
+	</div>
+</div>
