@@ -17,7 +17,7 @@ class services {
           headers : {
                     'contentType': 'application/json'
                 },
-          url: mainConfig.basePath+'searchtrainers/'+offset
+          url: 'http://base.getsetgo.fitness/API/v1/searchtrainers/0'
         })
         return( request.then( this.handleSuccess, this.handleError ) );
     }

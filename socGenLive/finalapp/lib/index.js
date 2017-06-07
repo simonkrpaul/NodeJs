@@ -12,6 +12,7 @@ import angularMaterial from 'angular-material';
 import angularUIRouter from 'angular-ui-router';
 // Our modules
 import home from './home/home.module';
+import coach from './coach/coach.module';
 import userimage from './userimage/userimage.module';
 import sidenav from './sidenav/sidenav.module';
 
@@ -24,6 +25,7 @@ export const demoModule = angular.module('demo', [
     angularAnimate,
     angularUIRouter,
     home,
+    coach,
     userimage,
     sidenav
 ]);

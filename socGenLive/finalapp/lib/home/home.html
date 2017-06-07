@@ -18,7 +18,8 @@
     </div>
 
     <!--<div>{{home.coaches}}</div>-->
-    <ul flex="80" flex-offset="10" layout="row" layout-align="center center" layout-wrap id="coachList">
+    <div ng-show="!(home.coaches.length>0)">Please wait. Loading data</div>
+    <ul flex="80" flex-offset="10" layout="row" layout-align="center center" layout-wrap id="coachList" ng-show="home.coaches.length>0">
         <li flex="30" ng-repeat="coach in home.displayedCoaches | filter:home.searchNm | orderBy:home.activeField">
             <p>{{coach.name}}</p>
             

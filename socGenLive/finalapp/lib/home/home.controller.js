@@ -5,9 +5,10 @@ class HomeController {
      *
      * @param {object} $scope
      */
-    constructor($scope) {
+    constructor($scope, Services) {
         'ngInject';
         var vm = this;
+        vm.Services = Services;
         vm.perPage = 5;
         vm.page = 1;
         vm.searchNm = "";
@@ -20,14 +21,23 @@ class HomeController {
             
         vm.activeField = 'name';
         //vm.order = true;
-        vm.coaches = tempData.coaches.ConsultantList[0];
-        vm.applyPagination();
+        vm.coaches =[];
         vm.imgBasePath = mainConfig.imgBasePath;
+        vm.getCoaches();
         // for(var i = 0; vm.coaches[i]; i++)
         // {
         //     vm.coaches[i].profile_pic = mainConfig.imgBasePath+vm.coaches[i].profile_pic;
         // }
         
+    }
+    getCoaches(){
+        var vm = this;
+        var response = vm.Services.fetchCoaches(0);
+        response.then(function(data){
+            //console.log(data);
+            vm.coaches = data.ConsultantList[0];
+            vm.applyPagination();
+        })
     }
     applyPagination(){
         var vm = this;
