@@ -16,14 +16,28 @@
         
     </head>
     <body id="MyApp">
-        <div class="myStaticDiv">
-            This is the static positioning type
-        </div>
-        <div class="AbsDivContainer">
-            <div class="myAbsDiv">
-                This is an absolute positioning type
-            </div>
-        </div>
+        
+<form onsubmit="testFn()" >
+	<div class="formContainer">
+	<ul class="formEl">
+		<li>
+			<input name="email" type="email" placeholder="email" required />
+		</li>
+		<li>
+			<input type="text" name="name" placeholder="name" required/>
+		</li>
+		<li>
+			<input type="number" name="age" placeholder="age" required min="20" max="80"/>
+		</li>
+		<li>
+			<input type="password" name="pass" placeholder="password" required />
+		</li>
+		<li>
+			<input type="submit" value="submit"/>
+		</li>
+	</ul>
+	</div>
+</form>
         <!--<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>

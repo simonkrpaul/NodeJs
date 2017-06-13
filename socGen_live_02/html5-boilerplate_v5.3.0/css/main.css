@@ -94,10 +94,29 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-p{color: red; font-size: 12px;}
-
-
-
+   header{background: #ccc; padding: 5px;}
+   .cb{clear: both;}
+   #logo{background: #1f1f1f; color: #fff; float: left; width: 20%;}
+   ul.mainMenu{list-style: none; float: right; padding: 0; margin: 0; background: green; width: 40%; color: #fff; min-width: 280px;}
+   ul.mainMenu>li{display: inline-block; width: 30%; vertical-align: top; cursor: pointer; position: relative;}
+   ul.mainMenu>li:hover{background: #1f1f1f; color: #fff;}
+   ul.mainMenu>li:hover>ul.subMenu{display: block;}
+   ul.mainMenu>li>ul.subMenu{list-style: none; margin: 0; padding: 0; display: none; position: absolute; top: 10px; left: 0;}
+   ul.mainMenu>li>ul.subMenu>li{padding: 10px 5px; border-bottom: 1px solid #ccc; background: #f1f1f1; color: #1f1f1f;}
+   #mainContent{margin-top: 10px; background: grey; padding: 10px;}
+   #mainContent>div{display: inline-block; background: #ccc; vertical-align: top;}
+   #mainContent>div.leftDiv{width: 20%; min-width: 200px; margin-bottom: 10px}
+   #mainContent>div.rightDiv{width: 78%; margin-left: 1%;}
+   #mainContent>div.rightDiv .cards{list-style: none; padding: 0; margin: 0;}
+   #mainContent>div.rightDiv .cards li{
+    display: inline-block; padding: 30px 13%; margin:10px  1% 0; background: green; color: #fff; text-align: center;
+   }
+   #mainContent>div.rightDiv .cards li:nth-child(2n){background: blue;}
+   #mainContent>div.rightDiv .cards li:nth-child(3n){background: pink;}
+   footer{background: #f1f1f1; margin-top: 10px;}
+   .formContainer{width: 100%;}
+   .formEl{list-style: none; margin: 50px; padding: 0;}
+   .formEl>li{dispay: block; margin-bottom: 10px;}
 
 
 
