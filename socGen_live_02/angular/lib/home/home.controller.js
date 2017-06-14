@@ -5,7 +5,7 @@ class HomeController {
      *
      * @param {object} $scope
      */
-    constructor($scope, services) {
+    constructor($scope, Services) {
         'ngInject';
 
         var vm = this;

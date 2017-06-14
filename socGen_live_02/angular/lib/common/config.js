@@ -1,5 +1,5 @@
 var mainConfig = {};
-mainConfig.basePath = 'http://base.getsetgo.fitness/API/v1';
+mainConfig.basePath = 'http://base.getsetgo.fitness/API/v1/';
 var tempConfig = {};
 tempConfig.coaches = {
 	"total_records": "14",

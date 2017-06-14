@@ -4,6 +4,7 @@ class services {
 		this.$http = $http;
     }
     fetchCoaches(offset){
+    	var offset = offset || 0;
       var request = this.$http({
           method: 'GET',
           headers : {
